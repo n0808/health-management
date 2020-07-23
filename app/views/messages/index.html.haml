@@ -1,0 +1,21 @@
+.wrapper
+  .side
+    .side__Header
+      .side__Header--Box
+        %span.name
+          -# =current_user.name
+    .side__Contents
+      .side__Contents--Form
+  .main
+    .main__Header
+      .main__Header--Box
+    .main__Contents
+      .main__Content
+
+
+      -# .Form__new-message
+      -#   = f.text_field :content, class: 'content-form', placeholder: 'type a message'
+      -#   = f.label :image, class: 'label' do
+      -#     = icon('far', 'image', class: 'Form__icon')
+      -#     = f.file_field :image, class: 'file'
+      -#   = f.submit 'Send', class: 'submit-btn'
