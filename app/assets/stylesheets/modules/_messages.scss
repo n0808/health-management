@@ -24,7 +24,6 @@
         background-color: #ffff80;
         margin-top: 0px;
         margin-left: 10px;
-        // display: flex;
         justify-content: space-between;
         .name{
           // font-weight: bold;
@@ -44,49 +43,76 @@
       }
     }
     &__Contents{
-      height:  calc(100vh - 380px);
-      background-color: gray;
+      height:  calc(100vh - 400px);
+      background-color: #ffffcc;
       box-sizing: border-box;
     }
     &__Footer{
-      height: 300px;
+      height: 320px;
+      background-color: #ffffcc;
         .Form{
-          height: 280px;
+          height: 300px;
           width: 280px;
           background-color: ivory;
-          margin-top: 10px;
+          padding-top: 10px;
           margin-left: 10px;
-          .lists{
-            flex-direction: column;
-            padding-top: 15px;
-            &__list{
-              margin-top: 15px;
-              margin-left: 10px;
-              font-size: 18px;
-              align-items: center;
-              .Field{
+          justify-content: center;
+          align-items: center;
+          &__Heat{
+            height: 50px;
+            width: 250px;
+            // background-color: lawngreen;
+            margin-left: 15px;
+            .heat{
+              padding-left: 20px;
+              font-size: 20px;
+            }
+            .Field{
+              margin: 10px 20px;
               height: 30px;
-              width: 90px;
-              font-size: 15px;
-              margin-left: 20px;
-              }
-              .Form__radio--butto{
-                margin-left: 20px;
-                font-size: 10px;
-              }
-              .Form__textContent{
-                height: 80px;
+            }
+          }
+          &__Symptom{
+            height: 50px;
+            width: 250px;
+            // background-color: green;
+            margin-left: 15px;
+            display: flex;
+              .symptom{
+                padding-left: 20px;
+                padding-top: 5px;
                 font-size: 20px;
               }
-              .Form__submit{
-                // padding-left: 10px;
-                width: 150px;
+              &--Box{
+                margin-left: 30px;
+                height: 30px;
               }
+          }
+        
+          &__Textarea{
+            height: 150px;
+            width: 250px;
+            // background-color: blue;
+            margin-left: 15px;
+            .textarea{
+              padding-left: 20px;
             }
-         }
+            .Form__textContent{
+              display: block;
+              padding-left: 20px;
+              margin-left: 20px;
+              height: 100px;
+            }
+          }
+          .Form__submit{
+            margin-left: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 15px;
+          }
         }
-      }
     }
+  }
   .main{
     background-color: #ffff80;
     width: calc(100vw - 300px);
