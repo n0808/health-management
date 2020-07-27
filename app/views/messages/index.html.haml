@@ -4,11 +4,12 @@
       .side__Header--Box
         %ul.list
           %li.list__list-icon
-            =link_to edit_user_path(current_user) do
+            =link_to "" do
               = icon('fas', 'user-edit')
         %span.name
+          -# =current_user.name
           = icon('fas', 'user-circle')
-          =current_user.name
+          熊谷直樹
        
     .side__Contents
       .side__Contents--Box
@@ -46,9 +47,8 @@
           %span.symptom
           症状
           .Form__Symptom--Box
-            %input.Form__radio--button{type: "radio", name:"example", value: "有", required: ""} 有
+            %input.Form__radio--button{type: "radio", name:"example", value: "有"} 有
             %input.Form__radio--button{type: "radio",name:"example", value: "無"} 無
-            %span 入力必須
         .Form__Textarea
           %span.textarea
           症状詳細
