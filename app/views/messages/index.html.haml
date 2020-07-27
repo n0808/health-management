@@ -47,8 +47,8 @@
           %span.symptom
           症状
           .Form__Symptom--Box
-            %input.Form__radio--button{type: "radio"} 有
-            %input.Form__radio--button{type: "radio"} 無
+            %input.Form__radio--button{type: "radio", name:"example", value: "有"} 有
+            %input.Form__radio--button{type: "radio",name:"example", value: "無"} 無
         .Form__Textarea
           %span.textarea
           症状詳細
@@ -59,6 +59,10 @@
     .main__Header
       .main__Header--Box
         %ul.lists
+          %li.list
+            =link_to "" do
+              新規登録
+              =icon('fas', 'pen')
           %li.list
             =link_to "" do
               チーム作成
