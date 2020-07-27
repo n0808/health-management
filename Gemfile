@@ -60,3 +60,5 @@ gem 'font-awesome-sass'
 gem 'pry-rails'
 
 gem "simple_calendar", "~> 2.0"
+
+gem 'devise'

@@ -47,8 +47,9 @@
           %span.symptom
           症状
           .Form__Symptom--Box
-            %input.Form__radio--button{type: "radio", name:"example", value: "有"} 有
+            %input.Form__radio--button{type: "radio", name:"example", value: "有", required: ""} 有
             %input.Form__radio--button{type: "radio",name:"example", value: "無"} 無
+            %span 入力必須
         .Form__Textarea
           %span.textarea
           症状詳細
