@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+  height: 100vh;
+  a{
+    text-decoration: none;
+  }
+} 
+  .side{
+    width: 300px;
+    background-color: #ffff80;
+    &__Header{
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eeeeee;
+      &--Box{
+        height: 70px;
+        width: 200px;
+        background-color: #ffff80;
+        margin-top: 0px;
+        margin-left: 10px;
+        justify-content: space-between;
+        .name{
+          // font-weight: bold;
+          color: 	#808080;
+          font-size: 20px;
+          padding-top: 5px;
+          margin-left: 10px;
+        }
+        .list{
+          font-size: 23px;
+          padding-bottom: 5px;
+          margin-left: 10px;
+          a{
+            color: 	#666666;
+          }
+        }
+      }
+    }
+    &__Contents{
+      height:  calc(100vh - 400px);
+      background-color: #ffffcc;
+      box-sizing: border-box;
+    }
+    &__Footer{
+      height: 320px;
+      background-color: #ffffcc;
+        .Form{
+          height: 300px;
+          width: 280px;
+          background-color: ivory;
+          padding-top: 10px;
+          margin-left: 10px;
+          justify-content: center;
+          align-items: center;
+          &__Heat{
+            height: 50px;
+            width: 250px;
+            // background-color: lawngreen;
+            margin-left: 15px;
+            .heat{
+              padding-left: 20px;
+              font-size: 20px;
+            }
+            .Field{
+              margin: 10px 20px;
+              height: 30px;
+            }
+          }
+          &__Symptom{
+            height: 50px;
+            width: 250px;
+            // background-color: green;
+            margin-left: 15px;
+            display: flex;
+              .symptom{
+                padding-left: 20px;
+                padding-top: 5px;
+                font-size: 20px;
+              }
+              &--Box{
+                margin-left: 30px;
+                height: 30px;
+              }
+          }
+        
+          &__Textarea{
+            height: 150px;
+            width: 250px;
+            // background-color: blue;
+            margin-left: 15px;
+            .textarea{
+              padding-left: 20px;
+            }
+            .Form__textContent{
+              display: block;
+              padding-left: 20px;
+              margin-left: 20px;
+              height: 100px;
+            }
+          }
+          .Form__submit{
+            margin-left: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 15px;
+          }
+        }
+    }
+  }
+  .main{
+    background-color: #ffff80;
+    width: calc(100vw - 300px);
+    &__Header{
+      height: 80px;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      &--Box{
+        height: 40px;
+        width: calc(100vw - 300px);
+        background-color: #ffff80;
+        margin-top: 33px;
+        padding-right: 10px;
+        padding-left: 20px;
+        // display: flex;
+        // justify-content: space-between;
+        .lists{
+          display: flex;
+          font-weight: bold;
+          justify-content: space-around;
+          list-style: none;
+          margin-top: 5px;
+          .list{
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 5px;
+            a{
+              color: 	#666666;
+            }
+          }
+        }
+      }
+    }
+    &__Contents{
+      height: calc(100vh - 80px);
+      background-color: #ffffcc;
+      padding: 20px 20px;
+      &--Container{
+        height: calc(100vh - 130px);
+        width: calc(100vw - 350px);
+        // background-color: snow;
+        margin-top: 5px;
+        margin-left: 5px;
+        // margin: 0 auto;
+        .week{
+          font-size: 20px;
+          padding-left:5px;
+          margin-top: 2px;
+          text-align: center;
+          vertical-align: top;
+          font-weight: bold;
+        }
+        .day{
+          font-size: 25px;
+          // padding-left:5px;
+          // margin-top: 2px;
+          text-align: center;
+          vertical-align: top;
+          // font-weight: bold;
+        .dayBox{
+          font-size: 15px;
+          font-weight: bold;
+          }
+        }
+
+      }
+    }
+  }  
