@@ -11,6 +11,11 @@
           =current_user.name
        
     .side__Contents
+      - current_user.groups.each do |group|
+        .Group
+          = link_to '#' do
+            .Group__name
+              = group.name
       .side__Contents--Box
     .side__Footer
       %form.Form
