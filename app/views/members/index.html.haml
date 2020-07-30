@@ -1,0 +1,25 @@
+.GroupGamen
+  .Group__side
+    .Group__side__Header
+      .Group__side__Header--Box
+        = link_to root_path do
+          トップページへ戻る
+    .Group__side__Contents
+      - current_user.groups.each do |group|
+        .Groups
+          = link_to '#' do
+            .Group__name
+              = group.name
+      .side__Contents--Box
+  .Group__main 
+    .Group__main__Top
+      .Group__main__Top--Box
+        .group-name
+          test
+        .group-edit
+          -# edit_group_path(@group)
+          =link_to "" do
+            編集
+    .Group__main__Contents
+      .Group__main__Contents--Container
+.Groups
